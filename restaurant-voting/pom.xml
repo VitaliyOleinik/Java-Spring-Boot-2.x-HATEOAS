@@ -11,6 +11,8 @@
     <groupId>com</groupId>
     <artifactId>restaurant-voting</artifactId>
     <version>1.0</version>
+    <packaging>war</packaging>
+
     <name>restaurant-voting</name>
     <description>Spring Boot 2.x HATEOAS application (BootJava)</description>
     <properties>
@@ -25,7 +27,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
